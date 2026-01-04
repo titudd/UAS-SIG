@@ -25,7 +25,7 @@
         header {
             position: relative;
             background-color: rgba(0, 0, 0, 0.55);
-            padding: 20px 40px;
+            padding: 20px 40px 40px;
             text-align: center;
             color: white;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -34,7 +34,6 @@
         header h1 {
             margin: 0;
             font-size: 28px;
-            letter-spacing: 1px;
         }
 
         .logo-left {
@@ -45,21 +44,20 @@
 
         .logo-left img {
             width: 80px;
-            height: auto;
             border-radius: 10px;
-            box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
         }
 
-        .kelompok {
+        .kelompok-wrapper {
             position: absolute;
             top: 15px;
             right: 20px;
+        }
+
+        .kelompok {
             background-color: rgba(255, 255, 255, 0.85);
             color: #333;
             padding: 10px 15px;
             border-radius: 10px;
-            box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
-            text-align: left;
             font-size: 14px;
         }
 
@@ -69,32 +67,23 @@
             color: #4CAF50;
         }
 
-        .kelompok ul {
-            padding-left: 18px;
-            margin: 0;
-        }
-
         main {
+            padding: 30px 20px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 30px 20px;
         }
 
         .peta-card {
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255,255,255,0.95);
             border-radius: 15px;
             padding: 20px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
             max-width: 1000px;
             width: 95%;
         }
 
         .peta-card img {
             width: 100%;
-            height: auto;
             border-radius: 10px;
-            display: block;
         }
 
         @media (max-width: 768px) {
@@ -104,7 +93,7 @@
 
             header h1 {
                 font-size: 20px;
-                margin-bottom: 10px;
+                margin-top: 10px;
             }
 
             .logo-left {
@@ -113,17 +102,17 @@
                 margin-bottom: 10px;
             }
 
-            .logo-left img {
-                width: 60px;
+            .kelompok-wrapper {
+                position: static;
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
             }
 
             .kelompok {
-                position: static;
-                margin: 15px auto 0;
-                width: 100%;
                 max-width: 400px;
+                width: 100%;
                 font-size: 13px;
-                text-align: left;
             }
         }
     </style>
@@ -132,19 +121,21 @@
 <body>
 
 <header>
-    <h1>Peta Kesesuaian Pemukiman Kabupaten Malang</h1>
-
     <div class="logo-left">
         <img src="assets/Logo_Malang.png" alt="Logo Kabupaten Malang">
     </div>
 
-    <div class="kelompok">
-        <strong>Anggota Kelompok:</strong>
-        <ul>
-            <li>Anggota 1: Tadeo Laudatte</li>
-            <li>Anggota 2: Ryan Dhammaviriya Christy</li>
-            <li>Anggota 3: Titus Albert Kristian</li>
-        </ul>
+    <h1>Peta Kesesuaian Pemukiman Kabupaten Malang</h1>
+
+    <div class="kelompok-wrapper">
+        <div class="kelompok">
+            <strong>Anggota Kelompok:</strong>
+            <ul>
+                <li>Anggota 1: Tadeo Laudatte</li>
+                <li>Anggota 2: Ryan Dhammaviriya Christy</li>
+                <li>Anggota 3: Titus Albert Kristian</li>
+            </ul>
+        </div>
     </div>
 </header>
 

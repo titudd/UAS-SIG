@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peta Kesesuaian Pemukiman Kabupaten Malang</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -67,6 +69,11 @@
             color: #4CAF50;
         }
 
+        .kelompok ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+
         main {
             display: flex;
             justify-content: center;
@@ -91,8 +98,19 @@
         }
 
         @media (max-width: 768px) {
+            header {
+                padding: 20px 15px;
+            }
+
             header h1 {
-                font-size: 22px;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .logo-left {
+                position: static;
+                text-align: center;
+                margin-bottom: 10px;
             }
 
             .logo-left img {
@@ -100,36 +118,41 @@
             }
 
             .kelompok {
+                position: static;
+                margin: 15px auto 0;
+                width: 100%;
+                max-width: 400px;
                 font-size: 13px;
-                padding: 8px 12px;
+                text-align: left;
             }
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Peta Kesesuaian Pemukiman Kabupaten Malang</h1>
 
-        <div class="logo-left">
-            <img src="assets/Logo_Malang.png" alt="Logo Kabupaten Malang">
-        </div>
+<header>
+    <h1>Peta Kesesuaian Pemukiman Kabupaten Malang</h1>
 
-        <div class="kelompok">
-            <strong>Anggota Kelompok:</strong>
-            <ul>
-                <li>Anggota 1: Tadeo Laudatte</li>
-                <li>Anggota 2: Ryan Dhammaviriya Christy</li>
-                <li>Anggota 3: Titus Albert Kristian</li>
-            </ul>
-        </div>
-    </header>
+    <div class="logo-left">
+        <img src="assets/Logo_Malang.png" alt="Logo Kabupaten Malang">
+    </div>
 
-    <main>
-        <div class="peta-card">
-            <img src="assets/Malang.png" alt="Peta Kabupaten Malang">
-        </div>
-    </main>
+    <div class="kelompok">
+        <strong>Anggota Kelompok:</strong>
+        <ul>
+            <li>Anggota 1: Tadeo Laudatte</li>
+            <li>Anggota 2: Ryan Dhammaviriya Christy</li>
+            <li>Anggota 3: Titus Albert Kristian</li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="peta-card">
+        <img src="assets/Malang.png" alt="Peta Kabupaten Malang">
+    </div>
+</main>
+
 </body>
-
 </html>
-
